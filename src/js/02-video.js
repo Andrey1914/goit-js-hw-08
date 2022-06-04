@@ -7,39 +7,23 @@ player.on('play', function () {
   console.log('played the video!');
 });
 
-player.getVideoTitle().then(function (title) {
-  console.log('title:', title);
+player.on('timeupdate', function (video) {
+  video.addEventListener('timeupdate');
 });
 
-const onPlay = function (data) {
-  let video = document.querySelector('iframe');
+player
+  .setCurrentTime(30.456)
+  .then(function (seconds) {
+    // seconds = the actual time that the player seeked to
+  })
+  .catch(function (error) {
+    switch (error.name) {
+      case 'RangeError':
+        // the time was less than 0 or greater than the video’s duration
+        break;
 
-  // если localStorage содержит значение currentTime (текущее время), присваиваем это значение video.currentTime
-  if (localStorage.currentTime) {
-    video.currentTime = localStorage.currentTime;
-  }
-
-  // при каждом изменении video.currentTime, записываем его значение в localStorage.currentTime
-  video.addEventListener(
-    'timeupdate',
-    () => (localStorage.currentTime = video.currentTime)
-  );
-};
-
-player.on('play', onPlay);
-
-// window.onload = () => {
-//   // находим элемент <video>
-//   let video = document.querySelector('#vimeo-player');
-
-//   // если localStorage содержит значение currentTime (текущее время), присваиваем это значение video.currentTime
-//   if (localStorage.currentTime) {
-//     video.currentTime = localStorage.currentTime;
-//   }
-
-//   // при каждом изменении video.currentTime, записываем его значение в localStorage.currentTime
-//   video.addEventListener(
-//     'timeupdate',
-//     () => (localStorage.currentTime = video.currentTime)
-//   );
-// };
+      default:
+        // some other error occurred
+        break;
+    }
+  });
