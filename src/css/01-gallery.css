@@ -3,6 +3,17 @@
   --animation-duration: 250ms;
 }
 
+.link-arrow-left {
+  color: #000;
+}
+
+@media screen and (min-width: 1536px) {
+  .link-arrow-left {
+    margin: 0 0 20px 143px;
+    display: inline-block;
+  }
+}
+
 .gallery {
   display: grid;
   max-width: 1140px;

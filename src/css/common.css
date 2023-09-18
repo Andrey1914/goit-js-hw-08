@@ -18,11 +18,39 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section {
   padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .section {
+    padding: 150px 0;
+  }
 }
 
 .container {
   width: calc(100% - 30px);
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .container {
+    width: calc(100% - 100px);
+  }
 }
