@@ -7,22 +7,31 @@
     <title>Feedback form</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/03-feedback.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <section class="section">
+      <div class="container">
+        <a class="link-arrow-left" href="index.html"
+          ><span class="material-symbols-outlined"> arrow_left_alt </span></a
+        >
 
-    <form class="feedback-form" autocomplete="off">
-      <label>
-        Email
-        <input type="email" name="email" autofocus />
-      </label>
-      <label>
-        Message
-        <textarea name="message" rows="8"></textarea>
-      </label>
-      <button type="submit">Submit</button>
-    </form>
-
+        <form class="feedback-form" autocomplete="off">
+          <label>
+            Email
+            <input type="email" name="email" autofocus />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="8"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
     <script src="js/03-feedback.js" type="module"></script>
   </body>
 </html>

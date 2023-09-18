@@ -1,0 +1,23 @@
+.player {
+  width: 330px;
+  height: 182px;
+}
+
+@media all and (min-width: 768px) {
+  .player {
+    width: 718px;
+    height: 399px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .player {
+    width: 1436px;
+    height: 803px;
+  }
+}
+
+.link-arrow-left {
+  display: inline-block;
+  margin-bottom: 20px;
+}
