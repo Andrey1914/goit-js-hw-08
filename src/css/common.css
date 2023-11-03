@@ -18,23 +18,26 @@ img {
   max-width: 100%;
 }
 
-a {
+a,
+h1,
+p {
+  margin: 0;
   text-decoration: none;
 }
 
 .section {
-  padding: 40px 0;
+  padding: 20px 0 0 0;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 }
 
 @media screen and (min-width: 1536px) {
   .section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 
