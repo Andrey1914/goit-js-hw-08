@@ -14,22 +14,27 @@
     />
   </head>
   <body>
-    <section class="section">
-      <div class="container">
+    <header class="header">
+      <div class="container container__video">
         <a class="link-arrow-left" href="index.html"
           ><span class="material-symbols-outlined"> arrow_left_alt </span></a
         >
-        <iframe
-          class="player"
-          id="vimeo-player"
-          src="https://player.vimeo.com/video/236203659"
-          frameborder="0"
-          allowfullscreen
-          allow="autoplay; encrypted-media"
-        ></iframe>
       </div>
-    </section>
-
+    </header>
+    <main>
+      <section class="section section__video">
+        <div class="container container__video">
+          <iframe
+            class="player"
+            id="vimeo-player"
+            src="https://player.vimeo.com/video/236203659"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay; encrypted-media"
+          ></iframe>
+        </div>
+      </section>
+    </main>
     <script src="https://player.vimeo.com/api/player.js" type="module"></script>
     <script src="js/02-video.js" type="module"></script>
   </body>

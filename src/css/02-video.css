@@ -1,3 +1,15 @@
+.header {
+  padding-top: 20px;
+}
+
+.section__video {
+  padding-top: 20px;
+}
+
+.container__video {
+  width: calc(100% - 637px);
+}
+
 .player {
   width: 330px;
   height: 182px;
@@ -12,12 +24,11 @@
 
 @media all and (min-width: 768px) {
   .player {
-    width: 1436px;
-    height: 803px;
+    width: 898px;
+    height: 514px;
   }
 }
 
 .link-arrow-left {
   display: inline-block;
-  margin-bottom: 20px;
 }
